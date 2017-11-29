@@ -1,12 +1,19 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
+import { NgModule, ApplicationRef } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import {TabsModule,TabComponent,TabsComponent,InputModule} from '@swimlane/ngx-ui'
+import { NgxUIModule } from '@swimlane/ngx-ui';
+//import {TabsModule,TabComponent,TabsComponent,InputModule,DrawerService,InjectionService,OverlayService,DialogService,NotificationService, AlertService, LoadingService,IconRegisteryService,HotkeysService,} from '@swimlane/ngx-ui'
 
 
 import { ColorsService } from './colors/colors.service';
+
+
 
 
 // https://angular.io/styleguide#!#04-10
@@ -16,22 +23,22 @@ import { ColorsService } from './colors/colors.service';
         FormsModule,
         ReactiveFormsModule,
         TranslateModule,
-        TabsModule,InputModule
+        NgxUIModule
     ],
-    providers: [
-        ColorsService
+    providers: [NgxUIModule,
+      ColorsService//,DrawerService,InjectionService,OverlayService,DialogService,NotificationService, InjectionService ,AlertService, LoadingService,IconRegisteryService,HotkeysService,
     ],
     declarations: [
-
+        
     ],
     exports: [
+        NgxUIModule,
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
         TranslateModule,
         RouterModule,
- 
-        TabsModule,InputModule
+             // TabsModule,InputModule
  
  
     ]
