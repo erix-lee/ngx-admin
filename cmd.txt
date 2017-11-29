@@ -1,0 +1,10 @@
+ng g module a --routing
+
+ng g component a
+
+ng g module b
+
+ng g component b
+
+
+
