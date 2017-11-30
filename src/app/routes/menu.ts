@@ -1,14 +1,18 @@
 
+const headingMain = {
+    text: 'Main Navigation',
+    heading: true
+};
 const Home = {
-    text: 'Home',
+    text: '首页',
     link: '/home',
-    icon: 'icon-home'
+    icon: 'fa fa-home'
 };
 
 const Dashboard = {
-    text: 'Dashboard',
+    text: '仪表盘',
     link: '/dashboard',
-    icon: 'icon-speedometer',
+    icon: 'fa fa-dashboard',
     submenu: [
         {
             text: 'Dashbord v1',
@@ -26,15 +30,15 @@ const Dashboard = {
 };
 
 const Widgets = {
-    text: 'Widgets',
+    text: '小部件',
     link: '/widgets',
-    icon: 'fa fa-search'
+    icon: 'fa fa-puzzle-piece'
 };
 
 const Elements = {
-    text: 'Elements',
+    text: '界面组件',
     link: '/elements',
-    icon: 'icon-chemistry',
+    icon: 'fa fa-chemistry',
     submenu: [
         {
             text: 'Buttons',
@@ -120,7 +124,7 @@ const Tables = {
 const Maps = {
     text: 'Maps',
     link: '/maps',
-    icon: 'icon-map',
+    icon: 'fa fa-map',
     submenu: [
         {
             text: 'Google',
@@ -136,7 +140,7 @@ const Maps = {
 const Pages = {
     text: 'Pages',
     link: '/pages',
-    icon: 'icon-doc',
+    icon: 'fa fa-doc',
     submenu: [
         {
             text: 'Login',
@@ -172,7 +176,7 @@ const Pages = {
 const Blog = {
     text: 'Blog',
     link: '/blog',
-    icon: 'icon-notebook',
+    icon: 'fa fa-notebook',
     submenu: [
         {
             text: 'List',
@@ -196,7 +200,7 @@ const Blog = {
 const Ecommerce = {
     text: 'Ecommerce',
     link: '/ecommerce',
-    icon: 'icon-basket-loaded',
+    icon: 'fa fa-basket-loaded',
     submenu: [
         {
             text: 'Orders',
@@ -224,7 +228,7 @@ const Ecommerce = {
 const Extras = {
     text: 'Extras',
     link: '/extras',
-    icon: 'icon-cup',
+    icon: 'fa fa-cup',
     submenu: [
         {
             text: 'Contacts',
@@ -322,10 +326,6 @@ const Extras = {
 }
 
 
-const headingMain = {
-    text: 'Main Navigation',
-    heading: true
-};
 
 const headingComponents = {
     text: 'Components',
