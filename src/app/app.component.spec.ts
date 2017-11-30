@@ -8,12 +8,12 @@ import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
 import { RoutesModule } from './routes/routes.module';
-import { APP_BASE_HREF } from '@angular/common';
 
-describe('App: Ng2angle', () => {
+
+describe('App', () => {
     beforeEach(() => {
 
-        jasmine.DEFAULT_TIMEOUT_INTERVAL = 60000;
+    
 
         TestBed.configureTestingModule({
             declarations: [
@@ -27,7 +27,7 @@ describe('App: Ng2angle', () => {
                 RoutesModule
             ],
             providers: [
-               // { provide: APP_BASE_HREF, useValue: '/' }
+               
             ]
         });
     });

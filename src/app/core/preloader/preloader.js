@@ -34,7 +34,7 @@
             // animate preloader hiding
             removePreloader();
             // retore scrollbar
-            body.style.overflow = '';
+            body.style.overflow = 'auto';
         }, 300);
     }
 

@@ -28,13 +28,9 @@ const Dashboard = {
 const Widgets = {
     text: 'Widgets',
     link: '/widgets',
-    icon: 'icon-grid'
+    icon: 'fa fa-search'
 };
-const Ngxcharts = {
-    text: 'Chart',
-    link: '/chart',
-    icon: 'fa fa-grid'
-};
+
 const Elements = {
     text: 'Elements',
     link: '/elements',
@@ -105,74 +101,20 @@ const Elements = {
 
 const Forms = {
     text: 'Forms',
-    link: '/forms',
-    icon: 'icon-note',
-    submenu: [
-        {
-            text: 'Standard',
-            link: '/forms/standard'
-        },
-        {
-            text: 'Extended',
-            link: '/forms/extended'
-        },
-        {
-            text: 'Validation',
-            link: '/forms/validation'
-        },
-        {
-            text: 'Upload',
-            link: '/forms/upload'
-        },
-        {
-            text: 'Image Crop',
-            link: '/forms/cropper'
-        }
-    ]
+    link: '/ngxui',
+    icon: 'fa fa-note'
 };
 
 const Charts = {
     text: 'Charts',
-    link: '/charts',
-    icon: 'icon-graph',
-    submenu: [
-        {
-            text: 'Flot',
-            link: '/charts/flot'
-        },
-        {
-            text: 'Radial',
-            link: '/charts/radial'
-        },
-        {
-            text: 'ChartJS',
-            link: '/charts/chartjs'
-        }
-    ]
+    link: '/ngxchart',
+    icon: 'fa fa-chart'
 };
 
 const Tables = {
     text: 'Tables',
-    link: '/tables',
-    icon: 'icon-grid',
-    submenu: [
-        {
-            text: 'Standard',
-            link: '/tables/standard'
-        },
-        {
-            text: 'Extended',
-            link: '/tables/extended'
-        },
-        {
-            text: 'Data-Tables',
-            link: '/tables/datatable'
-        },
-        {
-            text: 'Angular Grid',
-            link: '/tables/aggrid'
-        }
-    ]
+    link: '/ngxtable',
+    icon: 'fa fa-grid'
 };
 
 const Maps = {
@@ -410,6 +352,5 @@ export const menu = [
     Pages,
     Blog,
     Ecommerce,
-    Extras,
-    Ngxcharts
+    Extras
 ];

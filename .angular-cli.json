@@ -19,11 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-		"app/core/preloader/preloader.scss",
+
         "styles.scss"
       ],
       "scripts": [
-	    "app/core/preloader/preloader.js"
+	    
 	  ],
       "environmentSource": "environments/environment.ts",
       "environments": {
