@@ -30,7 +30,11 @@ const Widgets = {
     link: '/widgets',
     icon: 'icon-grid'
 };
-
+const Ngxcharts = {
+    text: 'Chart',
+    link: '/chart',
+    icon: 'fa fa-grid'
+};
 const Elements = {
     text: 'Elements',
     link: '/elements',
@@ -406,5 +410,6 @@ export const menu = [
     Pages,
     Blog,
     Ecommerce,
-    Extras
+    Extras,
+    Ngxcharts
 ];

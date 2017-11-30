@@ -6,12 +6,13 @@ export const routes = [
         path: '',
         component: LayoutComponent,
         children: [
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', loadChildren: './home/home.module#HomeModule' }
+           
+            { path: 'home', loadChildren: './home/home.module#HomeModule' },
+            { path: 'ngxchart', loadChildren: './ngxchart/ngxchart.module#NgxchartModule' }
         ]
     },
 
     // Not found
-    { path: '**', redirectTo: 'home' }
+    { path: '**', redirectTo: 'ngxchart' }
 
 ];

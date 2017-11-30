@@ -27,7 +27,7 @@ describe('App: Ng2angle', () => {
                 RoutesModule
             ],
             providers: [
-                { provide: APP_BASE_HREF, useValue: '/' }
+               // { provide: APP_BASE_HREF, useValue: '/' }
             ]
         });
     });

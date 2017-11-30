@@ -1,19 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { HttpModule, Http } from '@angular/http';
 import { HttpClient } from "@angular/common/http";
 import { TranslateService, TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 import { AppComponent } from './app.component';
-import { NgxUIModule } from '@swimlane/ngx-ui';
+
 import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
 import { RoutesModule } from './routes/routes.module';
 
+
+// https://github.com/ocombe/ng2-translate/issues/218
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -25,7 +26,7 @@ export function createTranslateLoader(http: HttpClient) {
     ],
     imports: [
         HttpModule,
-        BrowserModule, NgxUIModule, FormsModule, NgxDatatableModule, 
+        BrowserModule,
         BrowserAnimationsModule, // required for ng2-tag-input
         CoreModule,
         LayoutModule,
